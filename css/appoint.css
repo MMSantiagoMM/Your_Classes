@@ -1,0 +1,83 @@
+h1 {
+    text-align: center;
+    margin-top: 70%;
+}
+p{
+    text-align: center;
+    color: black;
+    
+    
+}
+.row{
+    border-radius: 30px;
+    margin: 35px;
+}
+.history {
+    background-image: url("/img/hostory.jpeg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    z-index: 1;
+    
+}
+.history::after{
+    content: '';
+    background-color: rgb(255, 255, 255);
+    top: 0;
+    left: 0;
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    opacity: 0.5;
+    padding: 100%;
+}
+.math {
+    background-image: url("/img/math.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    z-index: 1;
+    
+}
+.math::after{
+    content: '';
+    background-color: rgb(255, 255, 255);
+    top: 0;
+    left: 0;
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    opacity: 0.7;
+    padding: 100%;
+}
+.philosophy {
+    background-image: url("/img/philosophy.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    z-index: 1;
+    
+}
+.philosophy::after{
+    content: '';
+    background-color: rgb(255, 255, 255);
+    top: 0;
+    left: 0;
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    opacity: 0.7;
+    padding: 100%;
+}
+
+.botoncito {
+    position: absolute;
+    bottom: 3px;
+    left: 1;
+}
+.longitud {
+    width: 40%;
+}
