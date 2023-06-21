@@ -30,7 +30,7 @@ p{
     z-index: -1;
     width: 100%;
     opacity: 0.5;
-    padding: 100%;
+    padding: 90% 0 0 0;
 }
 .math {
     background-image: url("/img/math.jpg");
@@ -50,7 +50,7 @@ p{
     z-index: -1;
     width: 100%;
     opacity: 0.7;
-    padding: 100%;
+    padding: 90% 0 0 0;
 }
 .philosophy {
     background-image: url("/img/philosophy.jpg");
@@ -70,14 +70,19 @@ p{
     z-index: -1;
     width: 100%;
     opacity: 0.7;
-    padding: 100%;
+    padding: 90% 0 0 0;
 }
 
 .botoncito {
     position: absolute;
-    bottom: 3px;
-    left: 1;
+    bottom: 20px;
+    left: 6px;
 }
 .longitud {
     width: 40%;
+}
+.editar {
+    position: absolute;
+    bottom: 60px;
+    left: 7px;
 }

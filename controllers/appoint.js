@@ -19,6 +19,11 @@ memory.forEach(item => {
     boton.addEventListener("click", ()=>{
         row.remove();
     })
+    let edit = document.createElement("button");
+    edit.classList.add("btn")
+    edit.classList.add("btn-success")
+    edit.classList.add("editar")
+    edit.textContent = "Editar"
     let title = document.createElement("h1")
     title.textContent = "Su clase"
     let name = document.createElement("p")
@@ -42,6 +47,9 @@ memory.forEach(item => {
     } else if (item.Matter == "Filosofía"){
         row.classList.add("philosophy")
     }
+    edit.addEventListener("click", ()=>{
+        
+    } )
     Container.appendChild(row)
     row.appendChild(colOne)
     row.appendChild(colTwo)
@@ -54,4 +62,5 @@ memory.forEach(item => {
     colTwo.appendChild(hour)
     colTwo.appendChild(matter)
     colOne.appendChild(boton)
+    colOne.appendChild(edit)
 });
