@@ -1,6 +1,7 @@
 let memory = JSON.parse(sessionStorage.getItem("dates"));
 let Container = document.getElementById("contenedor");
 
+
 memory.forEach(item => {
     let row = document.createElement("section")
     row.classList.add("row")
@@ -17,7 +18,8 @@ memory.forEach(item => {
     boton.classList.add("botoncito")
     boton.textContent = "Quitar"
     boton.addEventListener("click", ()=>{
-        row.remove();
+        memory.splice(item,1)
+        sessionStorage.setItem("dates", JSON.stringify(memory))
     })
     let edit = document.createElement("button");
     edit.classList.add("btn")
