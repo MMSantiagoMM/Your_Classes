@@ -20,6 +20,10 @@ memory.forEach(item => {
     boton.addEventListener("click", ()=>{
         memory.splice(item,1)
         sessionStorage.setItem("dates", JSON.stringify(memory))
+        setTimeout(()=>{
+            location.reload();
+        },1000)
+        
     })
     let edit = document.createElement("button");
     edit.classList.add("btn")
@@ -65,4 +69,6 @@ memory.forEach(item => {
     colTwo.appendChild(matter)
     colOne.appendChild(boton)
     colOne.appendChild(edit)
+    
 });
+

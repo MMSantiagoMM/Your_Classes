@@ -87,6 +87,10 @@ Button.addEventListener("click", (info) => {
             showConfirmButton: false,
             timer: 1500
           })
+          setTimeout(()=>{
+            console.log("recargando")
+            location.reload()
+          },1000)
     }else{
         Swal.fire({
             icon: 'error',
@@ -94,5 +98,5 @@ Button.addEventListener("click", (info) => {
             footer: 'Esto pasa porque eres un imbécil y no llenaste todos los campos'
           })
     }
-
+    
 })
