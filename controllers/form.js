@@ -97,6 +97,10 @@ Button.addEventListener("click", buttonPrincipal=(info) => {
             title: 'Error, revisa los campos requeridos',
             footer: 'Verifica que todos los campos estén diligenciados correctamente'
           })
+          setTimeout(()=>{
+            console.log("recargando")
+            location.reload()
+          },3500)
     }
     
 })
