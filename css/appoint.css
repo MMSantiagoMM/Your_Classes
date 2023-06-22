@@ -100,6 +100,7 @@ p{
 }
 .main-tablero{
     background-image: url("/img/pizarra.jpg");
+    background-position: center;
 }
 .main-form {
     background-image: url("/img/ideas.png");

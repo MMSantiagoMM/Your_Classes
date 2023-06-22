@@ -94,8 +94,8 @@ Button.addEventListener("click", buttonPrincipal=(info) => {
     }else{
         Swal.fire({
             icon: 'error',
-            title: 'Error, cabrón! revisa los campos',
-            footer: 'Esto pasa porque eres un imbécil y no llenaste todos los campos'
+            title: 'Error, revisa los campos requeridos',
+            footer: 'Verifica que todos los campos estén diligenciados correctamente'
           })
     }
     
