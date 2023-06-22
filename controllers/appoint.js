@@ -31,7 +31,8 @@ memory.forEach(item => {
     edit.classList.add("editar")
     edit.textContent = "Editar"
     let title = document.createElement("h1")
-    title.textContent = "Su clase"
+    title.textContent = "Tu clase"
+    title.classList.add("mt-4")
     let name = document.createElement("p")
     name.textContent = "Nombre: "+ item.Name
     let docu = document.createElement("p")
