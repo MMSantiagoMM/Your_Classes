@@ -7,7 +7,7 @@ memory.forEach(item => {
     row.classList.add("col-md-6")
     row.classList.add("row")
     row.classList.add("my-3")
-    row.classList.add("espacio")
+
     let colOne = document.createElement("section")
     colOne.classList.add("col-4")
     let colTwo = document.createElement("section")
@@ -43,12 +43,12 @@ memory.forEach(item => {
     let date = document.createElement("p")
     date.textContent = "Fecha de agendamiento: " + item.Date
     let hour = document.createElement("p")
-    hour.textContent = "Hora de su clase" + item.Hour
+    hour.textContent = "Hora de su clase: " + item.Hour
     let matter = document.createElement("p")
     matter.textContent = "Usted agendó una clase de: " + item.Matter
     if(item.Matter == "Historia"){
         row.classList.add("history")
-        row.classList.add("mx-2")
+
     } else if(item.Matter == "Matematicas"){
         row.classList.add("math")
 
@@ -57,6 +57,63 @@ memory.forEach(item => {
     }
     edit.addEventListener("click", ()=>{
         
+        
+        let fecha = document.createElement("input")
+        fecha.type = "date"
+        date.textContent = " "
+        date.appendChild(fecha)
+        let hora = document.createElement("select")
+        let option1=document.createElement("option")
+        option1.textContent = "Horario"
+        let option2=document.createElement("option")
+        option2.textContent = "5:30"
+        let option3=document.createElement("option")
+        option3.textContent = "7:30"
+        let option4=document.createElement("option")
+        option4.textContent = "9:30"
+        let option5=document.createElement("option")
+        option5.textContent = "11:30"
+        let option6=document.createElement("option")
+        option6.textContent = "13:30"
+        let option7=document.createElement("option")
+        option7.textContent = "15:30"
+        let option8=document.createElement("option")
+        option8.textContent = "17:30"
+        let option9=document.createElement("option")
+        option9.textContent = "19:30"
+        hour.textContent = " "
+        hour.appendChild(hora)
+        hora.appendChild(option1)
+        hora.appendChild(option2)
+        hora.appendChild(option3)
+        hora.appendChild(option4)
+        hora.appendChild(option5)
+        hora.appendChild(option6)
+        hora.appendChild(option7)
+        hora.appendChild(option8)
+        hora.appendChild(option9)
+        let aceptar = document.createElement("button")
+        aceptar.classList.add("btn")
+        aceptar.classList.add("btn-warning")
+        aceptar.classList.add("botoncito3")
+        aceptar.textContent = "Guardar"
+        colTwo.appendChild(aceptar)
+        aceptar.addEventListener("click",()=>{
+            date.textContent = fecha.value
+            item.Date = fecha.value;
+            hour.textContent = hora.value
+            item.Hour = hora.value;
+            sessionStorage.setItem("dates", JSON.stringify(memory))
+            setTimeout(()=>{
+                location.reload()
+            },50)
+        })
+        let anuncio = document.createElement("p")
+        anuncio.classList.add("edicion")
+        anuncio.textContent = "*Usted está editando su agenda"
+        colOne.appendChild(anuncio)
+
+
     } )
     Container.appendChild(row)
     row.appendChild(colOne)

@@ -7,7 +7,7 @@ let boxHour = document.getElementById("validationCustom06");
 let boxMatter = document.getElementById("validationCustom07");
 const Button = document.getElementById("button");
 
-Button.addEventListener("click", (info) => {
+Button.addEventListener("click", buttonPrincipal=(info) => {
     info.preventDefault();
     let Name = boxName.value;
     let Docu = boxDocument.value;

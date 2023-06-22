@@ -31,7 +31,7 @@ p{
     border-radius: 30px;
 }
 .math {
-    background-image: url("/img/math.png");
+    background-image: url("/img/math.jpeg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -83,6 +83,26 @@ p{
     bottom: 60px;
     left: 7px;
 }
-.espacio{
-    left: 150px;
+
+.botoncito3 {
+    position: absolute;
+    bottom: 100px;
+    left: 5px;
+}
+.edicion {
+    color: red;
+}
+#contenedor {
+    margin: 70px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.main-tablero{
+    background-image: url("/img/pizarra.jpg");
+}
+.main-form {
+    background-image: url("/img/ideas.png");
+    background-position: right;
+    background-repeat: no-repeat;
 }
