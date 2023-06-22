@@ -4,10 +4,10 @@ let Container = document.getElementById("contenedor");
 
 memory.forEach(item => {
     let row = document.createElement("section")
-    row.classList.add("row")
     row.classList.add("col-md-6")
-    row.classList.add("col-sm-12")
-    row.classList.add("longitud")
+    row.classList.add("row")
+    row.classList.add("my-3")
+    row.classList.add("espacio")
     let colOne = document.createElement("section")
     colOne.classList.add("col-4")
     let colTwo = document.createElement("section")
@@ -48,8 +48,10 @@ memory.forEach(item => {
     matter.textContent = "Usted agendó una clase de: " + item.Matter
     if(item.Matter == "Historia"){
         row.classList.add("history")
+        row.classList.add("mx-2")
     } else if(item.Matter == "Matematicas"){
         row.classList.add("math")
+
     } else if (item.Matter == "Filosofía"){
         row.classList.add("philosophy")
     }
