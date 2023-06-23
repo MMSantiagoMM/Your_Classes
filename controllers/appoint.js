@@ -100,10 +100,12 @@ memory.forEach(item => {
         aceptar.textContent = "Guardar"
         colTwo.appendChild(aceptar)
         aceptar.addEventListener("click",()=>{
-            date.textContent = fecha.value
-            item.Date = fecha.value;
-            hour.textContent = hora.value
-            item.Hour = hora.value;
+            if(fecha.value){
+                date.textContent = fecha.value
+                item.Date = fecha.value;
+            } else {
+                date.textContent = item.Date
+            }  
             sessionStorage.setItem("dates", JSON.stringify(memory))
             setTimeout(()=>{
                 location.reload()
