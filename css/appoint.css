@@ -101,6 +101,7 @@ p{
 .main-tablero{
     background-image: url("/img/pizarra.jpg");
     background-position: center;
+    height: 700px;
 }
 .main-form {
     background-image: url("/img/ideas.png");
