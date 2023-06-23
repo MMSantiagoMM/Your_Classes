@@ -11,6 +11,7 @@
     .footer {
         background-color: #24262b;
         padding: 20px 0;
+        height: 420px;
     }
     .row {
         display: flex;
